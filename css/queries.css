@@ -1,0 +1,314 @@
+/*************************************/
+/* screen sizes below 1350px (small desktop) */
+/*************************************/
+@media (max-width: 84.375em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .primary-headline {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(11),
+  .gallery-item:nth-child(12) {
+    display: none;
+  }
+  .testemonial-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+/*************************************/
+/* screen sizes below 1200px (landscape tablets) */
+/*************************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  /* .testemonial-text {
+    font-size: 1.799999rem;
+  } */
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+  .thirtiary-heading {
+    font-size: 2.4rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+}
+/*************************************/
+/* screen sizes below 950px ( tablets) */
+/*************************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 48%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+    padding: 0 9.6rem;
+  }
+  .hero-img {
+    width: 75%;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .delivered {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .logos img {
+    height: 2.6rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .testemonial-section {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(11),
+  .gallery-item:nth-child(12) {
+    display: block;
+  }
+  .CTA {
+    grid-template-columns: 3fr 2.5fr;
+  }
+
+  .CTA-form {
+    grid-template-columns: 1fr;
+    font-size: 1.6rem;
+  }
+  /* mobile navigation style start here at the query 950px */
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.884);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translate(-100%, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(0, 0);
+  }
+  .nav-open .mobile-menu-icon[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .mobile-menu-icon[name="menu-outline"] {
+    display: none;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.8rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 2500;
+  }
+}
+/*************************************/
+/* screen sizes below 700px ( smaller tablets) */
+/*************************************/
+@media (max-width: 44em) {
+  .grid--4-cols,
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diets {
+    grid-column: span 2;
+    align-self: center;
+    justify-self: center;
+  }
+  .diets .list {
+    margin-left: 4.8rem;
+  }
+  .logos img {
+    height: 2.2rem;
+  }
+  .secondary-heading {
+    margin-bottom: 4.8rem;
+  }
+  .prising-plan {
+    width: 100%;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+}
+/*************************************/
+/* screen sizes below 544px (mobile screen) */
+/*************************************/
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--4-cols,
+  .grid--3-cols,
+  .grid--2-cols,
+  .testemonials,
+  .CTA {
+    grid-template-columns: 1fr;
+  }
+  .hero-section {
+    background-color: #fdf2e9;
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .btn--full:link,
+  .btn--full:visited {
+    margin-bottom: 1.2rem;
+  }
+  .logos {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+  .logos img {
+    height: 1.6rem;
+  }
+  .delivered {
+    flex-wrap: wrap;
+  }
+  .delivered-text {
+    font-size: 2rem;
+  }
+  .how-section {
+    padding: 9.6rem 0 0 0;
+  }
+  .step-img-box {
+    transform: translateY(15%);
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+  }
+  .CTA-img-box {
+    height: 38rem;
+    grid-row: 1;
+  }
+  .CTA-text-box {
+    padding: 3.2rem;
+  }
+}
+
+/*************************************/
+/* fixing safari flex gap */
+/*************************************/
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
